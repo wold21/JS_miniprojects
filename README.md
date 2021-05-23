@@ -1,4 +1,4 @@
 1. Click Me
-   <img src="C:\Users\Tazo\Desktop\화면 캡처 2021-05-23 220858.png" alt="image1" style="zoom:50%;" />
+   ![화면 캡처 2021-05-23 220858](https://user-images.githubusercontent.com/53270168/119262424-27ebcf80-bc16-11eb-98dd-e9e3d33bfa35.png)
 2. I Will Take Your Time
-   <img src="C:\Users\Tazo\Desktop\화면 캡처 2021-05-23 215600.png" alt="image2" style="zoom:50%;" />
+   ![화면 캡처 2021-05-23 215600](https://user-images.githubusercontent.com/53270168/119262430-2fab7400-bc16-11eb-9c8d-1e4acdb471ae.png)
