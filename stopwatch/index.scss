@@ -1,0 +1,84 @@
+/* Variabes */
+$orange: #b86e0077;
+$grey: #f3f3f3;
+$white: #fff;
+$base-color: $orange;
+
+/* Mixin's */
+@mixin transition {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+@mixin corners($radius) {
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+  -khtml-border-radius: $radius;
+}
+
+@font-face {
+  font-family: "ELAND_Choice_M";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Choice_M.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+.main-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  width: 100%;
+  margin: 30px auto;
+  color: $white;
+  text-align: center;
+  text-shadow: 5px 5px 3.5px #47474783;
+}
+
+.background {
+  width: 100vh;
+  height: 100vh;
+  object-fit: contain;
+}
+h1,
+h2,
+h3 {
+  font-family: "ELAND_Choice_M";
+  font-weight: 100;
+  font-size: 2.6em;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 2em;
+  text-align: center;
+  vertical-align: middle;
+}
+
+button {
+  @include corners(15px);
+  font-family: "ELAND_Choice_M";
+  background: $base-color;
+  color: $white;
+  border: solid 2px $white;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  padding: 18px 10px;
+  width: 180px;
+  margin: 10px;
+  outline: none;
+  &:hover {
+    @include transition;
+    background: $white;
+    border: solid 1px $white;
+    color: $base-color;
+  }
+}
