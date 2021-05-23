@@ -6,15 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>First :: Stopwatch</title>
     <link rel="stylesheet" href="./css/index.css" />
+    <script src="./index.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.1/css/jquery.mb.YTPlayer.min.css"
+    />
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.1/jquery.mb.YTPlayer.min.js"></script>
+    <script>
+      jQuery(function () {
+        jQuery("#background").YTPlayer();
+      });
+    </script>
   </head>
   <body>
-    <div class="wrapper">
-      <h1>Little Stopwatch</h1>
-      <h2>I Take Your Time</h2>
-      <p><span id="seconds">00</span>:<span id="tens">00</span></p>
-      <button id="btn-start">Start</button>
-      <button id="btn-stop">Stop</button>
-      <button id="btn-reset">Reset</button>
+    <div class="main-container">
+      <div
+        id="background"
+        class="player"
+        data-property="{
+        videoURL:'https://youtu.be/Xc1Le3CSdrM',
+        autoPlay: true,
+        mute: true,
+        showControls: false,
+        useOnMobile: true,
+        quality: 'highres',
+        containment: 'body',
+        loop: true,
+        stopMovieOnBlur: false,
+        startAt: 0,
+        opacity: 1
+      }"
+      ></div>
+      <div class="wrapper">
+        <h1>Little Stopwatch</h1>
+        <h2>I Take Your Time</h2>
+        <p>
+          <span id="min">00</span>:<span id="seconds">00</span>:<span id="tens"
+            >00</span
+          >
+        </p>
+        <button id="btn-start">Start</button>
+        <button id="btn-stop">Stop</button>
+        <button id="btn-reset">Reset</button>
+      </div>
     </div>
   </body>
 </html>
